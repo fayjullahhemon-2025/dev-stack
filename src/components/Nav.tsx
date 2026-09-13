@@ -22,11 +22,11 @@ export default function Nav() {
                 </div>
                 <div >
                     <ul className="flex justify-around items-center gap-2 font-medium text-[#475569]">
-                        <li><a className='text-[#DB2777]' href="#">Home</a></li>
-                        <li><a href="#">Technologies</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a className='text-[#DB2777] transition-colors' href="#">Home</a></li>
+                        <li><a  href="#">Technologies</a></li>
+                        <li><a  href="#">Projects</a></li>
+                        <li><a  href="#">About</a></li>
+                        <li><a  href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div className='font-semibold' >

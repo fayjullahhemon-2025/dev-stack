@@ -2,7 +2,7 @@ import Logo from '../assets/logo-text.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 export default function Nav() {
     return (
-        <nav className='flex justify-around items-center sticky top-0 z-100 bg-white'>
+        <nav className='flex justify-around items-center sticky top-0 z-100 bg-white border-[#F1F5F9] mb-2'>
             <div className="flex justify-between items-center  pl-4 pr-4 pt-3 pb-3 md:hidden w-full">
                 <button className="text-2xl text-[#475569]">
                     <GiHamburgerMenu />

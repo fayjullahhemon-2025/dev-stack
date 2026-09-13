@@ -1,7 +1,7 @@
 import BannerImg from '../assets/banner-stack.png'
 export default function Banner() {
     return (
-        <div className='flex justify-around items-center w-full m-auto'>
+        <div className='flex justify-around items-center w-full m-auto mb-10'>
             <div className='flex flex-col justify-center '>
                 <h1 className='text-[60px] font-bold leading-none text-[#0F172A] pb-3' >Build Your Ideal
                     <br />

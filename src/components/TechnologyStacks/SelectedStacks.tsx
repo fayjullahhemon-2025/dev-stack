@@ -33,7 +33,7 @@ export default function SelectedStacks({ selectedStacks,
                     {selectedStacks.map((tech) => (
                         <li
                             key={tech.id}
-                            className="flex justify-between items-center bg-[#F8FAFC] p-2 rounded-lg border border-slate-100"
+                            className="flex justify-between items-center  p-2 rounded-lg border border-[#E2E8F0]"
                         >
                             <div className="flex items-center gap-2">
                                 <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain" />
@@ -56,7 +56,7 @@ export default function SelectedStacks({ selectedStacks,
             {selectedStacks.length > 0 && (
                 <button
                     onClick={handleRemoveAll}
-                    className="text-red-500 hover:text-red-700 text-[14px] flex items-center gap-1 font-semibold border-2 border-[#ED8C85] py-3 rounded-lg justify-center"
+                    className="text-red-500 hover:text-red-700 text-[14px] flex items-center gap-1 font-semibold border border-[#ED8C85] py-3 rounded-lg justify-center"
                 >
                     Remove All
                 </button>

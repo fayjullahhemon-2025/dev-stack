@@ -13,7 +13,9 @@ export default function Technologies({ TechnologyPromiseData }: TechnologiesProp
     const handleAddStack = (tech: TechnologyStacksType) => {
         if (!selectedStacks.find((item) => item.id === tech.id)) {
             setSelectedStacks((prev) => [...prev, tech]);
+           
         }
+        
     };
     const handleRemoveStack = (id: string) => {
         setSelectedStacks((prev) => prev.filter((item) => item.id !== id));

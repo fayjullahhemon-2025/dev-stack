@@ -17,7 +17,7 @@ export default function Technologies({ TechnologyPromiseData }: TechnologiesProp
     const handleRemoveStack = (id: string) => {
     setSelectedStacks((prev) => prev.filter((item) => item.id !== id));
   };
-    const handleRemoveAll = () => {
+    const handleRemoveAll = ():void => {
         setSelectedStacks([]);
     };
     return (
@@ -40,7 +40,7 @@ export default function Technologies({ TechnologyPromiseData }: TechnologiesProp
                         })
                     }
                 </div>
-                <div className=' w-[30%] border-2' >
+                <div className=' w-[30%]' >
                     <SelectedStacks
                         selectedStacks={selectedStacks}
                         handleRemoveStack={handleRemoveStack}

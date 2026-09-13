@@ -2,7 +2,7 @@ import Logo from '../assets/logo-text.png'
 export default function Footer() {
     return (
         <div>
-            <footer className="w-300 m-auto bg-white text-slate-500 text-sm py-12 px-6">
+            <footer className="w-full  m-auto bg-white text-slate-500 text-sm py-12 px-6">
                 <div className="max-w-7xl mx-auto">
  
                     <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">

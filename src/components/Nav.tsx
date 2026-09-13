@@ -16,7 +16,7 @@ export default function Nav() {
                 </div>
             </div>
 
-            <div className="hidden justify-around items-center pt-3 pb-3 md:flex w-360" >
+            <div className="hidden justify-around items-center pt-3 pb-3 md:flex w-full" >
                 <div>
                     <img src={Logo} alt="" />
                 </div>

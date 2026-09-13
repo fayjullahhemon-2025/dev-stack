@@ -44,7 +44,7 @@ export default function Technologies({ TechnologyPromiseData }: TechnologiesProp
         });
     };
     return (
-        <div className="flex justify-center w-290 m-auto flex-col " >
+        <div className="flex justify-center w-270 m-auto flex-col " >
             <div>
                 <h1 className='text-4xl' >Explore the <span className="bg-linear-to-r from-[#e048a7] to-[#ba43bf] bg-clip-text text-transparent font-bold " >Technologies</span> </h1>
                 <p className="text-[#64748B]" >Pick one technology per category to build your ideal stack.</p>
@@ -63,7 +63,7 @@ export default function Technologies({ TechnologyPromiseData }: TechnologiesProp
                         })
                     }
                 </div>
-                <div className=' w-[30%]' >
+                <div className=' w-[30%] mx-0.5 border-2 border-gray-300 rounded-2xl p-1.5' >
                     <SelectedStacks
                         selectedStacks={selectedStacks}
                         handleRemoveStack={handleRemoveStack}

@@ -36,8 +36,11 @@ export default function SelectedStacks({ selectedStacks,
                             className="flex justify-between items-center bg-[#F8FAFC] p-2 rounded-lg border border-slate-100"
                         >
                             <div className="flex items-center gap-2">
-                                <img src={tech.icon} alt={tech.name} className="w-5 h-5 object-contain" />
-                                <span className="font-semibold text-sm text-[#0F172A]">{tech.name}</span>
+                                <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain" />
+                                <div className="flex flex-col items-center" >
+                                    <span className="font-semibold text-sm text-[#0F172A]">{tech.name}</span>
+                                    <span className="font-light text-xs text-gray-400">{tech.category}</span>
+                                </div>
                             </div>
                             <button
                                 onClick={() => handleRemoveStack(tech.id)}

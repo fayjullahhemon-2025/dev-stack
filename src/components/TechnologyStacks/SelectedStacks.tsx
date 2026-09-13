@@ -1,5 +1,6 @@
 import type { TechnologyStacksType } from "../types";
 import { FaXmark } from "react-icons/fa6";
+
 interface SelectedStacksPropType {
     selectedStacks: TechnologyStacksType[];
     handleRemoveStack: (id: string) => void;
@@ -13,13 +14,20 @@ export default function SelectedStacks({ selectedStacks,
             <div className="flex justify-between items-center  pb-2">
                 <div>
                     <h1 className="text-xl font-bold text-[#0F172A]">Your Stacks</h1>
-                    <p className='text-xs text-[#94A3B8]' > {selectedStacks.length} Technology Selected</p>
+                    <p className='text-xs text-[#94A3B8] mt-0.5' > {selectedStacks.length? ` ${selectedStacks.length} Technology Selected`:""}</p>
+                    <p className="text-gray-400 text-sm">{selectedStacks.length===0?"No technologies selected yet":""}</p>
                 </div>
 
             </div>
 
             {selectedStacks.length === 0 ? (
-                <p className="text-gray-400 text-sm">No technologies selected yet.</p>
+                <>
+                    
+                    <div className="flex justify-center items-center mt-10 text-[#94A3B8] border border-[#94a3b82f] rounded-2xl py-10 " >
+                        <p>Your stack is empty.</p>
+                    </div>
+                </>
+                
             ) : (
                 <ul className="flex flex-col gap-2">
                     {selectedStacks.map((tech) => (

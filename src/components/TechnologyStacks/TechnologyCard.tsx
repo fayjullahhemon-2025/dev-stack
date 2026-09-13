@@ -33,12 +33,13 @@ export default function TechnologyCard({ technology, isSelected, handleAddStack 
             </div>
             <h2 className='text-[#0F172A] text-[18px] font-bold' >{technology.name}</h2>
             <p className='line-clamp-3 text-[#64748B] text-[12px]' >{technology.description}</p>
-            <div className='flex items-center' >
-                <span className='bg-[#f1f5f9da] text-[#475569] rounded-lg px-4 py-2 ' >{technology.category}</span>
-                <span className=' text-[#475569] rounded-lg px-4 py-2' >{technology.difficulty}</span>
-                <span className='flex items-center gap-1 text-[#334155] rounded-lg px-4 py-2 font-bold'><FaStar className='text-yellow-400' /> {technology.rating}</span>
+            <div className='flex flex-wrap items-center justify-between gap-y-2' >
+                <span className='bg-[#f1f5f9da] text-[#475569] rounded-lg px-3 py-1.5 text-xs md:text-sm' >{technology.category}</span>
+                <span className='text-[#475569] rounded-lg px-2 py-1.5 text-xs md:text-sm' >{technology.difficulty}</span>
+                <span className='flex items-center gap-1 text-[#334155] rounded-lg px-2 py-1.5 font-bold text-xs md:text-sm'><FaStar className='text-yellow-400' /> {technology.rating}</span>
             </div>
             <button onClick={() => {
+                
                 handleAddStack(technology)
                 toast.success(`${technology.name} added successfully`, {
                     position: "bottom-right",

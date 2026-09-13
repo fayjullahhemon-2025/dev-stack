@@ -2,7 +2,7 @@ import Logo from '../assets/logo-text.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 export default function Nav() {
     return (
-        <nav className='flex justify-around items-center sticky top-0 z-100 bg-white border-[#F1F5F9] mb-2'>
+        <nav className='flex justify-around items-center sticky top-0 z-10 bg-white border-[#F1F5F9] mb-2'>
             <div className="flex justify-between items-center  pl-4 pr-4 pt-3 pb-3 md:hidden w-full">
                 <button className="text-2xl text-[#475569]">
                     <GiHamburgerMenu />
@@ -21,12 +21,12 @@ export default function Nav() {
                     <img src={Logo} alt="" />
                 </div>
                 <div >
-                    <ul className="flex justify-around items-center gap-2 font-medium text-[#475569]">
-                        <li><a className='text-[#DB2777] transition-colors' href="#">Home</a></li>
-                        <li><a  href="#">Technologies</a></li>
-                        <li><a  href="#">Projects</a></li>
-                        <li><a  href="#">About</a></li>
-                        <li><a  href="#">Contact</a></li>
+                    <ul className="flex justify-around items-center gap-10 font-medium text-[#475569]">
+                        <li><a className='text-[#DB2777] ' href="#">Home</a></li>
+                        <li><a href="#">Technologies</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div className='font-semibold' >
